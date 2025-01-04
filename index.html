@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Helmet Hub</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Full-screen sections */
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Optional: for styling buttons and text in sections */
+        .section .text-center {
+            text-align: center;
+        }
+        /* Video background styles */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        html {
+    scroll-behavior: smooth;
+}
+
+
+    </style>
+</head>
+<body>
+     <!-- Header -->
+     <header class="header bg-dark text-white sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3">Vincent Helmet Hub</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link text-white">Products</a></li>
+                    <li class="nav-item"><a href="#about-us" class="nav-link text-white">About Us</a></li>
+                    <li class="nav-item"><a href="#contact-us" class="nav-link text-white">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Section -->
+    <section class="section" id="home">
+        <main class="text-center mt-5">
+            
+            <video autoplay muted loop class="video-background" aria-label="Video background showcasing high-quality helmets.">
+                <source src="0104.mp4" type="video/mp4">
+                
+                <p>Your browser does not support the video element. Please check your browser settings.</p>
+            </video>
+    
+            <div class="text-white" style="text-align: center;">
+               
+                <div style="font-size: 1.5rem; font-weight: bold; color: white;">Explore our range of high-quality helmets designed for every adventure</div>
+                <div style="font-size: 1.2rem; color: white;">Where style meets safety - helmets for every Rider</div>
+            </div>
+    
+            
+            <div class="mb-4" style="margin-top: 30px;">
+                
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#signUpModal" aria-label="Open the sign-up modal to create a new account">Sign Up</button>
+                <button class="btn btn-light" data-toggle="modal" data-target="#signInModal" aria-label="Open the sign-in modal to log into your account">Sign In</button>
+            </div>
+        </main>
+    </section>
+
+    <!-- Products Section -->
+    <section class="product-section bg-light" id="products" >
+        <div class="container">
+            <h2 class="text-center mb-4">Our Products</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.motoworld.com.ph/cdn/shop/files/NOLANN90-3INCEPTION.jpg?v=1685607294&width=1500" class="card-img-top" alt="Helmet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">NOLAN INCEPTION</h5>
+                            <p class="card-text">High-quality helmet for maximum safety and comfort.</p>
+                            <p class="card-price">₱16,000</p> <!-- Price in pesos -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.motoworld.com.ph/cdn/shop/files/NOLANN90-3REFLECTOR38MetalWhite.jpg?v=1685604892&width=1125" class="card-img-top" alt="Helmet 2">
+                        <div class="card-body">
+                            <h5 class="card-title">NOLAN N90-3 HELMET</h5>
+                            <p class="card-text">Stylish design with advanced protection technology.</p>
+                            <p class="card-price">₱14,000</p> <!-- Price in pesos -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.motoworld.com.ph/cdn/shop/products/2_818f63ce-94e4-4272-837f-a6d0cda96573.jpg?v=1679640953&width=1125" class="card-img-top" alt="Helmet 3">
+                        <div class="card-body">
+                            <h5 class="card-title">STUDDS NINJA ELITE VISOR - MIRROR</h5>
+                            <p class="card-text">Specific visor for STUDDS Ninja Elite helmet</p>
+                            <p class="card-price">₱800</p> <!-- Price in pesos -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Additional Helmet Cards -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.motoworld.com.ph/cdn/shop/files/MX700ArchedBlackRedYellow.jpg?v=1715830556&width=1125" class="card-img-top" alt="Helmet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">EVO MOTORCYCLE MOTOCROSS</h5>
+                            <p class="card-text">High-quality helmet for maximum safety and comfort with a stylish design.</p>
+                            <p class="card-price">₱9,500</p> <!-- Price in pesos -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.motoworld.com.ph/cdn/shop/files/2_9504bed2-7bae-4085-9c25-ef843d30e78c.jpg?v=1724728623&width=1125" class="card-img-top" alt="Helmet 2">
+                        <div class="card-body">
+                            <h5 class="card-title">OPEN FACE HELMET</h5>
+                            <p class="card-text">Vintage-made modern with a wide visor offering excellent face coverage.</p>
+                            <p class="card-price">₱6,500</p> <!-- Price in pesos -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.motoworld.com.ph/cdn/shop/files/SENA50R-A0202_02.jpg?v=1709517787&width=1125" class="card-img-top" alt="Helmet 3">
+                        <div class="card-body">
+                            <h5 class="card-title">SENA 50R HELMET CLAMP KIT</h5>
+                            <p class="card-text">Premium sound for your 50R with sound by Harman Kardon speakers and microphone.</p>
+                            <p class="card-price">₱1,500</p> <!-- Price in pesos -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.motoworld.com.ph/cdn/shop/files/X802REARBOTTOMTRIM.jpg?v=1721203760&width=1125" class="card-img-top" alt="Helmet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">NOLAN X802 REAR BOTTOM TRIM</h5>
+                            <p class="card-text">Replacement rear bottom trim for X802</p>
+                            <p class="card-price">₱500</p> <!-- Price in pesos -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.motoworld.com.ph/cdn/shop/products/NOLAN-N90-3PUREWHITE15.jpg?v=1650264731&width=800" class="card-img-top" alt="Helmet 2">
+                        <div class="card-body">
+                            <h5 class="card-title">NOLAN N90-3 MONO HELMET</h5>
+                            <p class="card-text">Reliable protection with innovative design and excellent air flow.</p>
+                            <p class="card-price">₱12,000</p> <!-- Price in pesos -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.motoworld.com.ph/cdn/shop/files/RETROFFRankoBlueWhite.jpg?v=1715914311&width=1125" class="card-img-top" alt="Helmet 3">
+                        <div class="card-body">
+                            <h5 class="card-title">SMK FULL FACE HELMET</h5>
+                            <p class="card-text">Ultimate comfort and safety with a sleek aerodynamic design.</p>
+                            <p class="card-price">₱8,500</p> <!-- Price in pesos -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+  <!-- About Us Section -->
+  <!-- About Us Section -->
+<section class="section" id="about-us" style="background-color: #1D313C;">
+    <div class="container">
+        
+        <!-- Main Heading with Semantic Tag -->
+        <h2 class="text-center mb-4" style="font-size: 2rem; font-weight: bold; color: white;">About Us</h2>
+        
+        <!-- Descriptive Paragraph with Increased Contrast for Accessibility -->
+        <p class="text-center" style="font-size: 1.2rem; line-height: 1.6; color: white;">
+            Vincent Helmet Hub is committed to providing riders with the highest quality helmets. 
+            Our mission is to offer helmets that combine safety, comfort, and style. 
+            Whether you're cycling or motorcycling, we have the perfect helmet for you.
+        </p>
+
+        <!-- Call to Action Button with Accessible Label -->
+        <div class="text-center mt-4">
+            <button class="btn btn-secondary" aria-label="Browse our range of helmets" onclick="window.location.href='#products';">
+                Browse Our Helmets
+            </button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Us Section -->
+<section class="section" id="contact-us" style="background-color: #3A4C55;">
+    <div class="container">
+        <h2 class="text-center mb-4" style="color: white;">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p style="color: white;">If you have any questions, feel free to reach out to us:</p>
+                <ul style="color: white;">
+                    <li>Email: <a href="mailto:vincenthelmethub@gmail.com" style="color: #F26A8D;">vincenthelmethub@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+639175813189" style="color: #F26A8D;">(+63) 938 874 1398</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" style="color: white;">Your Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" style="color: white;">Your Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" style="color: white;">Your Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="messageModalLabel">Message Sent</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Your message has been successfully sent! We will get back to you shortly.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">x</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="signInEmail" class="text-dark">Email address</label>
+                            <input type="email" class="form-control" id="signInEmail" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="signInPassword" class="text-dark">Password</label>
+                            <input type="password" class="form-control" id="signInPassword" required="">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label text-dark" for="rememberMe">Remember Me</label>
+                        </div>
+                        <a href="#" class="text-muted">Forgot Password?</a>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-dark mx-2">Sign In</button>
+                </div>
+                <div class="social-signin text-center mb-2">
+                    <p class="text-dark">Or sign in with:</p>
+                    <button class="btn btn-danger btn-sm mx-1">
+                        <i class="fab fa-google"></i> Sign in with Google
+                    </button>
+                    <button class="btn btn-primary btn-sm mx-1">
+                        <i class="fab fa-facebook-f"></i> Sign in with Facebook
+                    </button>
+                </div>
+                      
+                </div>
+            </div>
+        </div>
+    
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="fullName" class="text-dark">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="signUpEmail" class="text-dark">Email address</label>
+                            <input type="email" class="form-control" id="signUpEmail" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="signUpPassword" class="text-dark">Password</label>
+                            <input type="password" class="form-control" id="signUpPassword" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword" class="text-dark">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required="">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" required="">
+                            <label class="form-check-label text-dark" for="termsCheck">I agree to the Terms &amp; Conditions</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-dark mx-2">Sign Up</button>
+                </div>
+                <div class="social-signup text-center mb-2">
+                    <p class="text-dark">Or sign up with:</p>
+                    <button class="btn btn-danger btn-sm mx-1">
+                        <i class="fab fa-google"></i> Sign up with Google
+                    </button>
+                    <button class="btn btn-primary btn-sm mx-1">
+                        <i class="fab fa-facebook-f"></i> Sign up with Facebook
+                    </button>
+                </div>                
+                    </div>                    
+                </div>
+            </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center p-3 bg-dark text-white" style="bottom: 0; left: 0; width: 100%;">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="text-white">
+                <a href="#" class="text-white" aria-label="Privacy Policy"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                <span>|</span>
+                <a href="#" class="text-white" aria-label="Terms of Service"><i class="fas fa-file-contract"></i> Terms of Service</a>
+                <span>|</span>
+                <a href="#" class="text-white" aria-label="FAQs"><i class="fas fa-question-circle"></i> FAQs</a>
+            </div>
+            <div class="text-white">
+                Follow us on:
+                <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="text-white">
+                <a href="mailto:vincenthelmethub@gmail.com" class="text-white" aria-label="Email"><i class="fas fa-envelope"></i> vincenthelmethub@gmail.com</a>
+                <span>|</span>
+                <a href="tel:+639175813189" class="text-white" aria-label="Phone"><i class="fas fa-phone-alt"></i> (+63) 938 874 1398</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include Bootstrap JS (ensure you have included the Bootstrap JS library) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Handle form submission
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();  // Prevent form submission
+        var modal = new bootstrap.Modal(document.getElementById("messageModal"));
+        modal.show();  // Show modal
+    });
+</script>
+</body>
+</html>
